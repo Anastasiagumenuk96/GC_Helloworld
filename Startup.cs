@@ -27,7 +27,7 @@ namespace helloworld_csharp
                 endpoints.MapGet("/", async context =>
                 {
                     var target = Environment.GetEnvironmentVariable("TARGET") ?? "World";
-                    await context.Response.WriteAsync($"Hello {target}!\n");
+                    await context.Response.WriteAsync($"Hello {target}! v2\n");
                 });
             });
         }
